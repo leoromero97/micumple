@@ -3,9 +3,7 @@ import Header from "@/components/Header";
 import NavBar from "@/components/Navbar";
 import Image from "next/image";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
-import { useState } from "react";
-import dayjs, { Dayjs } from "dayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers";
 
 export default function Home() {
   return (
@@ -14,7 +12,6 @@ export default function Home() {
         <main className="flex flex-col gap-8 items-center sm:items-start max-w-7xl">
           <NavBar />
           <Header />
-
         </main>
         <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
           <a

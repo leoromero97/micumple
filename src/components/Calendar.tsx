@@ -1,5 +1,5 @@
-import { getDayInfo, getDaysRemaining } from "@/helpers/utils/date";
 import React from "react";
+import { getDayInfo } from "@/helpers/utils/date";
 
 export type CalendarPropTypes = {
   celebrationDate: Date; // 2025 3 19 año/mes/dia
