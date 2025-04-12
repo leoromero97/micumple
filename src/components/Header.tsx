@@ -20,9 +20,9 @@ export default function Header() {
   const messageCount = getMessageCount(remainingDays)
 
   return (
-    <div className="flex justify-between gap-4 w-full">
+    <div className="flex flex-col justify-between gap-4 w-full">
+      <span className="py-2 px-3 rounded-sm bg-blue-100 text-blue-800 text-center font-semibold">{messageCount}</span>
       <Calendar celebrationDate={celebrationDate} />
-      <span>{messageCount}</span>
     </div>
   );
 }

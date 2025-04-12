@@ -15,5 +15,3 @@ export function getDaysRemaining(targetDate: Date): number {
   const daysRemaining = Math.ceil(timeDifference / (1000 * 3600 * 24));
   return daysRemaining;
 }
-
-// Ejemplos de uso:

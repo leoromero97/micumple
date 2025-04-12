@@ -20,8 +20,8 @@ export default function Button({
       {...props}
       className={`
         rounded-full 
-        px-1.5 
-        py-1.5
+        px-3 
+        py-2
         outline-1 
         outline-transparent 
         border-0 
@@ -29,10 +29,8 @@ export default function Button({
         font-regular
         leading-none
         sm:text-base
-        sm:font-semibold
-        sm:px-2
-        sm:py-2
-        md:px-3
+        font-semibold
+        md:px-4
         hover:cursor-pointer
         active:scale-105
         
