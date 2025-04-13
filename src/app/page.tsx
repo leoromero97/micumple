@@ -72,11 +72,12 @@ export default function Home() {
             }}
           />
         </main>
-        <footer className="flex w-full fixed bottom-0 pb-3 md:pb-6 items-center justify-center">
+        <footer className="flex flex-col w-full fixed bottom-0 pb-3 md:pb-6 items-center justify-center px-4">
           <Button
             text="Confirmar asistencia"
             variant="primary"
             onClick={handleOpen}
+            className="w-full max-w-md"
           />
         </footer>
         <Modal
