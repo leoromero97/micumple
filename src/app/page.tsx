@@ -76,7 +76,7 @@ export default function Home() {
             }}
           />
         </main>
-        <footer className="flex flex-col fixed bottom-0 pb-3 md:pb-6 w-[94%] items-center justify-center px-4 max-w-5xl">
+        <footer className="flex flex-col fixed bottom-0 pb-6 w-[94%] items-center justify-center px-4 max-w-5xl">
           <Button
             text="Confirmar asistencia"
             variant="primary"
