@@ -11,7 +11,7 @@ export default function Calendar({
   const { dayNumber, dayString } = getDayInfo(celebrationDate);
 
   return (
-    <div className="flex justify-between gap-8 w-full">
+    <div className="flex gap-8 w-full items-center">
       <div className="flex flex-col gap-2 rounded-md items-center min-w-20 border-1 border-neutral-100">
         <span className="bg-neutral-100 text-neutral-800 w-full text-center rounded-t-sm">
           {dayNumber.toString()}
@@ -20,7 +20,7 @@ export default function Calendar({
           {dayString}
         </span>
       </div>
-      <p>Presencial, a partir de las 20:30 horas</p>
+      <p className="text-base text-neutral-200">Presencial, a partir de las 20:30 horas. No te olvides de confirmar la asistencia!</p>
     </div>
   );
 }

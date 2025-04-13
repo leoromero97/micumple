@@ -17,11 +17,26 @@ const getMessageCount = (days?: number): string => {
 export default function Header() {
   const celebrationDate = new Date(2025, 3, 19);
   const remainingDays = getDaysRemaining(celebrationDate);
-  const messageCount = getMessageCount(remainingDays)
+  const messageCount = getMessageCount(remainingDays);
 
   return (
     <div className="flex flex-col justify-between gap-4 w-full">
-      <span className="py-2 px-3 rounded-sm bg-blue-100 text-blue-800 text-center font-semibold">{messageCount}</span>
+      <span
+        className={`
+        p-3 
+        md:p-6
+        rounded-sm 
+        bg-indigo-100 
+        text-indigo-800 
+        text-center 
+        font-semibold 
+        border-2 
+        border-indigo-800
+        text-lg
+        `}
+      >
+        {messageCount}
+      </span>
       <Calendar celebrationDate={celebrationDate} />
     </div>
   );

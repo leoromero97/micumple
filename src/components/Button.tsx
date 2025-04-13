@@ -13,7 +13,7 @@ export default function Button({
   const variantClasses = {
     primary: "bg-neutral-50 text-neutral-900 hover:bg-neutral-100 active:bg-neutral-200",
     secondary:
-      "bg-transparent hover:bg-neutral-600 text-neutral-50 outline-neutral-50 active:outline-neutral-100",
+      "bg-transparent hover:bg-neutral-600 text-neutral-50 border-1 outline-neutral-50 active:outline-neutral-100",
   };
   return (
     <button
@@ -30,10 +30,13 @@ export default function Button({
         leading-none
         sm:text-base
         font-semibold
-        md:px-4
         hover:cursor-pointer
         active:scale-105
-        
+        md:text-lg
+        md:px-6
+        md:py-4
+        shadow
+        shadow-neutral-50
         ${variantClasses[variant]}
       `}
     >
