@@ -26,12 +26,12 @@ export default function Header() {
         p-3 
         md:p-6
         rounded-sm 
-        bg-indigo-100 
-        text-indigo-800 
+        bg-blue-100 
+        text-blue-800 
         text-center 
         font-semibold 
         border-2 
-        border-indigo-800
+        border-blue-800
         text-lg
         `}
       >

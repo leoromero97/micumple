@@ -1,5 +1,5 @@
-import Image, { ImageProps } from "next/image";
 import React from "react";
+import Image, { ImageProps } from "next/image";
 
 export type BannerPropTypes = {
   title?: string;

@@ -63,7 +63,11 @@ export default function Home() {
             }}
           />
           <Banner
-            image={{ src: "/bellakeo.jpeg", alt: "Imagen bellakeo", className: 'object-bottom' }}
+            image={{
+              src: "/bellakeo.jpeg",
+              alt: "Imagen bellakeo",
+              className: "object-bottom",
+            }}
             title="3ra parada: Nos fuimos al baile"
             description="La idea es salir para Bellakeo (almagro) tipo 1:30 h, sacar 1 mesa con VIP y bailar hasta el amanecerrr 🕺"
             link={{
@@ -72,12 +76,12 @@ export default function Home() {
             }}
           />
         </main>
-        <footer className="flex flex-col w-full fixed bottom-0 pb-3 md:pb-6 items-center justify-center px-4">
+        <footer className="flex flex-col fixed bottom-0 pb-3 md:pb-6 w-[94%] items-center justify-center px-4 max-w-5xl">
           <Button
             text="Confirmar asistencia"
             variant="primary"
             onClick={handleOpen}
-            className="w-full max-w-md"
+            className="w-full relative self-center"
           />
         </footer>
         <Modal
