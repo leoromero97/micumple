@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <div className="flex flex-col min-h-screen p-4 gap-16 md:gap-32 sm:p-20 w-full bg-neutral-900 text-neutral-50">
+      <div className="flex flex-col min-h-screen p-4 pb-20 gap-16 md:gap-32 sm:p-20 w-full bg-neutral-900 text-neutral-50">
         <main className="flex flex-col gap-8 max-w-5xl">
           <NavBar />
           <picture className="overflow-hidden rounded-sm max-w-xl">
@@ -76,7 +76,7 @@ export default function Home() {
             }}
           />
         </main>
-        <footer className="flex flex-col fixed bottom-0 pb-6 w-[94%] items-center justify-center px-4 max-w-5xl">
+        <footer className="flex flex-col fixed bottom-0 pb-4 w-[94%] items-center justify-center px-4 max-w-5xl">
           <Button
             text="Confirmar asistencia"
             variant="primary"
